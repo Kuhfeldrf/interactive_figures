@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plotly Graph</title>
+    <title>Interactive Supplemental Figures</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
 </head>
-<body>
-    <iframe src="./Protein_plot_all_peptides.html" width="100%" height="600px" style="border:none;"></iframe>
+<body class="bg-gray-50 p-8">
+    <main class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8 text-gray-800">Interactive Supplemental Figures</h1>
+
+        <!-- Figure 1 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S1: Protein Distribution Analysis</h2>
+            
+            <div class="mb-6">
+                <iframe src="./Protein_plot_all_peptides.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            
+            <p class="text-gray-600 text-justify">
+                Stacked bar plots depicting the summed absolute absorbance of peptides grouped by their proteins of origin, highlighting the predominant protein sources and their relative contribution to the peptidomic profile. The top subplot (A and B) display the summed abundance of all peptides whereas bottom subplots (C and D) depicts the summed abundance from exclusively bioactive peptides. The left most subplots (A and C) illustrates the summed abundance of peptides that are mapped to the most prevalent shared proteins 'human and bovine' species. The right most subplots (B and D) summed abundance of peptides that are mapped to either 'bovine', 'human' or 'human and bovine' origins. Only the most abundant proteins are represented in this figure.
+            </p>
+        </section>
+
+        <!-- Figure 2 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S2: Bioactive Peptide Distribution</h2>
+            <div class="mb-6">
+                <iframe src="./Protein_plot_bioactive_peptides.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-600 text-justify">
+                Distribution of bioactive peptides across different protein sources, demonstrating the relative abundance and distribution patterns of functional peptides identified in the analysis.
+            </p>
+        </section>
+
+        <!-- Figure 3 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S3: ACE Inhibitory Activity</h2>
+            <div class="mb-6">
+                <iframe src="./ace_inhibitory.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-600 text-justify">
+                Analysis of ACE (Angiotensin-Converting Enzyme) inhibitory activity, showing the distribution and potency of peptides with potential antihypertensive properties.
+            </p>
+        </section>
+
+        <!-- Figure 4 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S4: Antimicrobial Activity</h2>
+            <div class="mb-6">
+                <iframe src="./antimicrobial.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-600 text-justify">
+                Distribution and characteristics of peptides with antimicrobial properties, highlighting their potential therapeutic applications.
+            </p>
+        </section>
+
+        <!-- Figure 5 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S5: DPP-IV Inhibitory Activity</h2>
+            <div class="mb-6">
+                <iframe src="./dppiv_inhibitory.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-600 text-justify">
+                Analysis of Dipeptidyl Peptidase-IV (DPP-IV) inhibitory activity, showcasing peptides with potential anti-diabetic properties.
+            </p>
+        </section>
+
+        <!-- Figure 6 -->
+        <section class="mb-16 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Figure S6: Cellular Growth Enhancement</h2>
+            <div class="mb-6">
+                <iframe src="./increasecelulargrowth.html" width="100%" height="600px" class="border-none rounded-lg"></iframe>
+            </div>
+            <p class="text-gray-600 text-justify">
+                Visualization of peptides that demonstrate cellular growth enhancement properties, indicating their potential role in tissue regeneration and growth promotion.
+            </p>
+        </section>
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-8 pb-8 text-center text-gray-500 text-sm">
+        <p>Interactive supplemental figures generated for manuscript visualization. All rights reserved.</p>
+    </footer>
 </body>
 </html>
